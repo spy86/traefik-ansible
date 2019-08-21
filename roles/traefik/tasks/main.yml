@@ -7,7 +7,7 @@
     group: root
     mode: 0644
   notify:
-    - Restart traefik
+    - Restart traefik service
 
 - name:  Install traefik and create config directory
   file:
@@ -24,7 +24,7 @@
     group: root
     mode: 0744
   notify:
-    - Restart traefik
+    - Restart traefik service
 
 - name: Check if traefik service is stopped before update
   service:
