@@ -1,3 +1,4 @@
     - hosts: traefik
+      remote_user: root
       roles:
          -  role: traefik
