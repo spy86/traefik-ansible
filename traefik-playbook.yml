@@ -1,0 +1,3 @@
+    - hosts: traefik
+      roles:
+         -  role: traefik
